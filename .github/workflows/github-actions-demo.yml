@@ -30,6 +30,7 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
       - run: python --version
+      - run: uname -a
 
   hello-windows:
     runs-on: windows-latest
@@ -44,6 +45,7 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
       - run: python --version
+      - run: uname -a
 
   hello-ubuntu-arm:
     runs-on: ubuntu-24.04-arm
@@ -51,3 +53,4 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
       - run: python --version
+      - run: uname -a
